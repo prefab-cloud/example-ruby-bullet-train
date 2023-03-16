@@ -1,7 +1,7 @@
 {
-  "name": "untitled-application",
+  "name": "example-bullettrain-app-using-prefab",
   "version": "1.0.0",
-  "description": "Integrate Zapier with Untitled Application",
+  "description": "Integrate Zapier with Example BulletTrain app using Prefab",
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive -t 10000"

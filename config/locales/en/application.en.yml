@@ -1,11 +1,11 @@
 en:
   application:
-    name: Untitled Application
+    name: Example BulletTrain app using Prefab
     owner: Unidentified Developer
     description: "You can update this description in `config/locales/en/application.en.yml`."
-    keywords: untitled application seo keywords
+    keywords: example bullettrain app using prefab seo keywords
     support_email: change.me@localhost
-    key: untitled_application
+    key: example_bullettrain_app_using_prefab
   webhooks/outgoing/endpoints:
     fields:
       api_version:
