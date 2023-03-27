@@ -1,6 +1,14 @@
 class Account::TeamsController < Account::ApplicationController
   include Account::Teams::ControllerBase
 
+  def show
+    Rails.logger.error "error 🥝🥝🥝🥝🥝🥝"
+    Rails.logger.warn "warn 🍋🍋🍋🍋🍋🍋🍋"
+    Rails.logger.info "info 🍊🍊🍊🍊🍊🍊🍊"
+    Rails.logger.debug "debug 🍒🍒🍒🍒🍒🍒🍒"
+    current_team.team_logging_method
+  end
+
   private
 
   def permitted_fields

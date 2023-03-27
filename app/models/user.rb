@@ -19,5 +19,11 @@ class User < ApplicationRecord
 
   # 🚅 add delegations above.
 
+  def user_logging_method
+    Rails.logger.error "error"
+    Rails.logger.warn "warn"
+    Rails.logger.info "info"
+    Rails.logger.debug "debug"
+  end
   # 🚅 add methods above.
 end

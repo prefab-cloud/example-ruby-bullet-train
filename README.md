@@ -15,8 +15,24 @@
     If you don't have these installed, you can use [rails.new](https://rails.new) to help with the process.
 
 2. Run the `bin/setup` script.
-3. Start the application with `bin/dev`.
-4. Visit http://localhost:3000.
+3. Create a Prefab account at https://prefab.cloud.
+4. Create a file `config/application.yml`
+```sh
+# config/application.yml
+BASE_URL: http://localhost:3000
+MARKETING_SITE_URL: /account
+PREFAB_API_KEY: XX-Development-PXXX-EXXX-SDK-REPLACE-ME
+```
+5. Start the application with `bin/dev`.
+6. Visit http://localhost:3000.
+7. Sign up for a new account.
+8. Change log levels in the Prefab Log Level UI and see the changes reflected in the application.
+
+
+## Information about Bullet Train
+If this is your first time working on a Bullet Train application, be sure to review the [Bullet Train Basic Techniques](https://bullettrain.co/docs/getting-started) and the [Bullet Train Developer Documentation](https://bullettrain.co/docs).
+
+
 
 ## Information about Bullet Train
 If this is your first time working on a Bullet Train application, be sure to review the [Bullet Train Basic Techniques](https://bullettrain.co/docs/getting-started) and the [Bullet Train Developer Documentation](https://bullettrain.co/docs).

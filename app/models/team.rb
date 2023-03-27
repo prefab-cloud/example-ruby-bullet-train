@@ -19,5 +19,13 @@ class Team < ApplicationRecord
 
   # 🚅 add delegations above.
 
+  def team_logging_method
+    Rails.logger.error "error"
+    Rails.logger.warn "warn"
+    Rails.logger.info "info"
+    Rails.logger.debug "debug"
+    users.first.user_logging_method
+  end
+
   # 🚅 add methods above.
 end

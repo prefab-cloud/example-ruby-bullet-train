@@ -3,7 +3,25 @@
 
   <% p.content_for :body do %>
     <%# 🚅 super scaffolding will insert new children above this line. %>
-    
+    <% features = %w(features.feature-1 features.feature-2) %>
+    <% features.each do |feature| %>
+      <p>
+        The feature
+        <code><%= feature %></code>
+        is <%= $prefab.feature_flag_client.get(feature, current_user.id, {name: current_user.name}) %>
+        for <code>$prefab.feature_flag_client.get(feature, <%= current_user.id %>, {name: <%= current_user.name  %>})</code>
+      </p>
+    <% end %>
+
+    <% configs = %w(sample.string sample.string-2) %>
+    <% configs.each do |config| %>
+      <p>
+        The value of
+        <code><%= config %></code>
+        is "<%= $prefab.get(config, "default") %>"
+      </p>
+    <% end %>
+
     <%= render 'account/scaffolding/absolutely_abstract/creative_concepts/index', creative_concepts: @team.scaffolding_absolutely_abstract_creative_concepts, hide_back: true unless scaffolding_things_disabled? %>
   <% end %>
 <% end %>

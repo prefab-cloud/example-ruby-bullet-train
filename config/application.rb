@@ -28,6 +28,9 @@ module ExampleBullettrainAppUsingPrefab
     config.i18n.default_locale = config.i18n.available_locales.first
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
 
+    $prefab = Prefab::Client.new
+    $prefab.set_rails_loggers
+
     BulletTrain::Api.set_configuration(self)
   end
 end
